@@ -1,0 +1,23 @@
+CREATE TABLE superstore (
+	row_id INT,
+	order_id VARCHAR(63),
+	order_date DATE,
+	ship_date DATE,
+	ship_mode TEXT,
+	customer_id VARCHAR(63),
+	customer_name TEXT,
+	segment TEXT,
+	country VARCHAR(63),
+	city VARCHAR(63),
+	state_name VARCHAR(63),
+	postal_code INT,
+	regiion VARCHAR(7),
+	product_id VARCHAR(63),
+	category VARCHAR(15),
+	sub_category VARCHAR(11),
+	product_name VARCHAR(123),
+	sales DECIMAL,
+	quantity INT,
+	discount DECIMAL,
+	profit DECIMAL	
+	);
