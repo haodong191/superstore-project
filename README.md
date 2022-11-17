@@ -22,4 +22,4 @@
 * Power BI Dashboard.pbix - Mirrors analysis using Power BI
 * Tableau Dashboard.twb - Mirrors analysis using Tableau
 * superstore excel.xlsx - Mirrors analysis using Micrsoft Excel
-* Slides - Slides and screenshots
+* Slides - Figures, slides and screenshots
