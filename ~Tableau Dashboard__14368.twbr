@@ -1,0 +1,2743 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.22.0707.1757                               -->
+<workbook source-build='2021.3.14 (20213.22.0707.1757)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CascadingFilters />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Superstore_final' inline='true' name='federated.1t759gc009diyg1bw9gl313iqq9e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Superstore_final' name='textscan.0uuksht1fiv9u4162up0h1x2qbzx'>
+            <connection class='textscan' directory='C:/Users/Hao/Desktop/Data Analysis/superstore-project/Resources' filename='Superstore_final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0uuksht1fiv9u4162up0h1x2qbzx' name='Superstore_final.csv' table='[Superstore_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='date' name='order_date' ordinal='1' />
+            <column datatype='date' name='ship_date' ordinal='2' />
+            <column datatype='string' name='ship_mode' ordinal='3' />
+            <column datatype='string' name='customer_id' ordinal='4' />
+            <column datatype='string' name='customer_name' ordinal='5' />
+            <column datatype='string' name='segment' ordinal='6' />
+            <column datatype='string' name='country' ordinal='7' />
+            <column datatype='string' name='city' ordinal='8' />
+            <column datatype='string' name='state' ordinal='9' />
+            <column datatype='integer' name='postal_code' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='product_id' ordinal='12' />
+            <column datatype='string' name='category' ordinal='13' />
+            <column datatype='string' name='sub_category' ordinal='14' />
+            <column datatype='string' name='product_name' ordinal='15' />
+            <column datatype='real' name='sales' ordinal='16' />
+            <column datatype='integer' name='quantity' ordinal='17' />
+            <column datatype='real' name='discount' ordinal='18' />
+            <column datatype='real' name='profit' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0uuksht1fiv9u4162up0h1x2qbzx' name='Superstore_final.csv' table='[Superstore_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='order_id' ordinal='0' />
+            <column datatype='date' name='order_date' ordinal='1' />
+            <column datatype='date' name='ship_date' ordinal='2' />
+            <column datatype='string' name='ship_mode' ordinal='3' />
+            <column datatype='string' name='customer_id' ordinal='4' />
+            <column datatype='string' name='customer_name' ordinal='5' />
+            <column datatype='string' name='segment' ordinal='6' />
+            <column datatype='string' name='country' ordinal='7' />
+            <column datatype='string' name='city' ordinal='8' />
+            <column datatype='string' name='state' ordinal='9' />
+            <column datatype='integer' name='postal_code' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='product_id' ordinal='12' />
+            <column datatype='string' name='category' ordinal='13' />
+            <column datatype='string' name='sub_category' ordinal='14' />
+            <column datatype='string' name='product_name' ordinal='15' />
+            <column datatype='real' name='sales' ordinal='16' />
+            <column datatype='integer' name='quantity' ordinal='17' />
+            <column datatype='real' name='discount' ordinal='18' />
+            <column datatype='real' name='profit' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[order_date]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>order_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[ship_date]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>ship_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ship_mode]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>ship_mode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postal_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[postal_code]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>postal_code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_category]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>sub_category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sales]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>sales</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[discount]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>discount</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[Superstore_final.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]&quot;' value='Total Customers' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Superstore_final.csv' datatype='table' name='[__tableau_internal_object_id__].[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+      <column caption='Discount' datatype='real' name='[discount]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Postal Code' datatype='integer' name='[postal_code]' role='dimension' type='ordinal' />
+      <column caption='Product Id' datatype='string' name='[product_id]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Profit' datatype='real' default-format='C1033%' name='[profit]' role='measure' type='quantitative' />
+      <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <column caption='Ship Date' datatype='date' name='[ship_date]' role='dimension' type='ordinal' />
+      <column caption='Ship Mode' datatype='string' name='[ship_mode]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[customer_id]' derivation='CountD' name='[ctd:customer_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[profit]' derivation='Sum' name='[pcdf:sum:profit:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' level-address='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' ordering-field='[federated.1t759gc009diyg1bw9gl313iqq9e].[order_date]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[sales]' derivation='Sum' name='[pcdf:sum:sales:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' level-address='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' ordering-field='[federated.1t759gc009diyg1bw9gl313iqq9e].[order_date]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[discount]' derivation='Sum' name='[sum:discount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[quantity]' derivation='Sum' name='[sum:quantity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[order_date]' derivation='Year' name='[yr:order_date:ok]' pivot='key' type='ordinal' />
+      <drill-paths>
+        <drill-path name='country, state, city'>
+          <field>[country]</field>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[pcdf:sum:sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:discount:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:quantity:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[__tableau_internal_object_id__].[cnt:Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[pcdf:sum:profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Superstore_final.csv' id='Superstore_final.csv_8267B3E7552E4E2E9B7E541736842581'>
+            <properties context=''>
+              <relation connection='textscan.0uuksht1fiv9u4162up0h1x2qbzx' name='Superstore_final.csv' table='[Superstore_final#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='date' name='order_date' ordinal='1' />
+                  <column datatype='date' name='ship_date' ordinal='2' />
+                  <column datatype='string' name='ship_mode' ordinal='3' />
+                  <column datatype='string' name='customer_id' ordinal='4' />
+                  <column datatype='string' name='customer_name' ordinal='5' />
+                  <column datatype='string' name='segment' ordinal='6' />
+                  <column datatype='string' name='country' ordinal='7' />
+                  <column datatype='string' name='city' ordinal='8' />
+                  <column datatype='string' name='state' ordinal='9' />
+                  <column datatype='integer' name='postal_code' ordinal='10' />
+                  <column datatype='string' name='region' ordinal='11' />
+                  <column datatype='string' name='product_id' ordinal='12' />
+                  <column datatype='string' name='category' ordinal='13' />
+                  <column datatype='string' name='sub_category' ordinal='14' />
+                  <column datatype='string' name='product_name' ordinal='15' />
+                  <column datatype='real' name='sales' ordinal='16' />
+                  <column datatype='integer' name='quantity' ordinal='17' />
+                  <column datatype='real' name='discount' ordinal='18' />
+                  <column datatype='real' name='profit' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_E5094892050740EC8AF925330A25DBF0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 3' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1170aa' fontsize='28'>Total Sales and Profits by Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Profit' datatype='real' default-format='C1033%' name='[profit]' role='measure' type='quantitative' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Technology&quot;</bucket>
+              <bucket>&quot;Furniture&quot;</bucket>
+              <bucket>&quot;Office Supplies&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' scope='rows' value='Dollars' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' />
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]</rows>
+        <cols>([federated.1t759gc009diyg1bw9gl313iqq9e].[none:category:nk] / [federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{33E7D960-E546-404B-97AA-7E4CF1CCF006}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1170aa' fontsize='28'>Total Sales and Profits by Sub-Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column-instance column='[sub_category]' derivation='None' name='[none:sub_category:nk]' pivot='key' type='nominal' />
+            <column caption='Profit' datatype='real' default-format='C1033%' name='[profit]' role='measure' type='quantitative' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:sub_category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' scope='rows' value='Dollars' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' />
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]</rows>
+        <cols>([federated.1t759gc009diyg1bw9gl313iqq9e].[none:sub_category:nk] / [federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{32AADFC1-A536-44D2-BF91-F185E7472B2E}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<Total Sales and Profits by Client>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column caption='Profit' datatype='real' default-format='C1033%' name='[profit]' role='measure' type='quantitative' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:profit:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:customer_name:nk]'>
+            <groupfilter function='level-members' level='[none:customer_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:customer_name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Tamara Chand&quot;</bucket>
+              <bucket>&quot;Sean Miller&quot;</bucket>
+              <bucket>&quot;Raymond Buch&quot;</bucket>
+              <bucket>&quot;Adrian Barton&quot;</bucket>
+              <bucket>&quot;Sanjit Chand&quot;</bucket>
+              <bucket>&quot;Tom Ashbrook&quot;</bucket>
+              <bucket>&quot;Hunter Lopez&quot;</bucket>
+              <bucket>&quot;Ken Lonsdale&quot;</bucket>
+              <bucket>&quot;Sanjit Engle&quot;</bucket>
+              <bucket>&quot;Christopher Conant&quot;</bucket>
+              <bucket>&quot;Todd Sumrall&quot;</bucket>
+              <bucket>&quot;Greg Tran&quot;</bucket>
+              <bucket>&quot;Bill Shonely&quot;</bucket>
+              <bucket>&quot;Christopher Martinez&quot;</bucket>
+              <bucket>&quot;Clay Ludtke&quot;</bucket>
+              <bucket>&quot;Seth Vernon&quot;</bucket>
+              <bucket>&quot;Maria Etezadi&quot;</bucket>
+              <bucket>&quot;Karen Ferguson&quot;</bucket>
+              <bucket>&quot;Caroline Jumper&quot;</bucket>
+              <bucket>&quot;Tom Boeckenhauer&quot;</bucket>
+              <bucket>&quot;Edward Hooks&quot;</bucket>
+              <bucket>&quot;Helen Wasserman&quot;</bucket>
+              <bucket>&quot;Daniel Raglin&quot;</bucket>
+              <bucket>&quot;Keith Dawkins&quot;</bucket>
+              <bucket>&quot;Laura Armstrong&quot;</bucket>
+              <bucket>&quot;Pete Kriz&quot;</bucket>
+              <bucket>&quot;Harry Marie&quot;</bucket>
+              <bucket>&quot;Justin Deggeller&quot;</bucket>
+              <bucket>&quot;Becky Martin&quot;</bucket>
+              <bucket>&quot;John Lee&quot;</bucket>
+              <bucket>&quot;Joe Elijah&quot;</bucket>
+              <bucket>&quot;Jane Waco&quot;</bucket>
+              <bucket>&quot;Adam Bellavance&quot;</bucket>
+              <bucket>&quot;Nick Crebassa&quot;</bucket>
+              <bucket>&quot;Brian Moss&quot;</bucket>
+              <bucket>&quot;Andy Reiter&quot;</bucket>
+              <bucket>&quot;Karen Daniels&quot;</bucket>
+              <bucket>&quot;Jim Epp&quot;</bucket>
+              <bucket>&quot;Nathan Mautz&quot;</bucket>
+              <bucket>&quot;John Murray&quot;</bucket>
+              <bucket>&quot;Anna Häberlin&quot;</bucket>
+              <bucket>&quot;Fred Hopkins&quot;</bucket>
+              <bucket>&quot;Rick Wilson&quot;</bucket>
+              <bucket>&quot;Lena Creighton&quot;</bucket>
+              <bucket>&quot;Paul Prost&quot;</bucket>
+              <bucket>&quot;Jonathan Doherty&quot;</bucket>
+              <bucket>&quot;Penelope Sewall&quot;</bucket>
+              <bucket>&quot;Nora Preis&quot;</bucket>
+              <bucket>&quot;Yana Sorensen&quot;</bucket>
+              <bucket>&quot;Peter Fuller&quot;</bucket>
+              <bucket>&quot;Maribeth Schnelling&quot;</bucket>
+              <bucket>&quot;Rick Huthwaite&quot;</bucket>
+              <bucket>&quot;Natalie Webber&quot;</bucket>
+              <bucket>&quot;Dan Reichenbach&quot;</bucket>
+              <bucket>&quot;Shirley Daniels&quot;</bucket>
+              <bucket>&quot;Valerie Dominguez&quot;</bucket>
+              <bucket>&quot;Darrin Martin&quot;</bucket>
+              <bucket>&quot;Alan Dominguez&quot;</bucket>
+              <bucket>&quot;Grace Kelly&quot;</bucket>
+              <bucket>&quot;Corinna Mitchell&quot;</bucket>
+              <bucket>&quot;Robert Marley&quot;</bucket>
+              <bucket>&quot;James Galang&quot;</bucket>
+              <bucket>&quot;Brenda Bowman&quot;</bucket>
+              <bucket>&quot;Dean percer&quot;</bucket>
+              <bucket>&quot;Patrick O&apos;Brill&quot;</bucket>
+              <bucket>&quot;Ben Ferrer&quot;</bucket>
+              <bucket>&quot;Max Jones&quot;</bucket>
+              <bucket>&quot;Quincy Jones&quot;</bucket>
+              <bucket>&quot;Joseph Holt&quot;</bucket>
+              <bucket>&quot;Sarah Brown&quot;</bucket>
+              <bucket>&quot;Kristen Hastings&quot;</bucket>
+              <bucket>&quot;Brosina Hoffman&quot;</bucket>
+              <bucket>&quot;Dennis Pardue&quot;</bucket>
+              <bucket>&quot;Zuschuss Carroll&quot;</bucket>
+              <bucket>&quot;Joel Eaton&quot;</bucket>
+              <bucket>&quot;Mitch Willingham&quot;</bucket>
+              <bucket>&quot;Amy Cox&quot;</bucket>
+              <bucket>&quot;William Brown&quot;</bucket>
+              <bucket>&quot;Bill Donatelli&quot;</bucket>
+              <bucket>&quot;Yoseph Carroll&quot;</bucket>
+              <bucket>&quot;Anne McFarland&quot;</bucket>
+              <bucket>&quot;Naresj Patel&quot;</bucket>
+              <bucket>&quot;Rob Lucas&quot;</bucket>
+              <bucket>&quot;Natalie Fritzler&quot;</bucket>
+              <bucket>&quot;Dianna Wilson&quot;</bucket>
+              <bucket>&quot;Keith Herrera&quot;</bucket>
+              <bucket>&quot;Katherine Murray&quot;</bucket>
+              <bucket>&quot;Mitch Webber&quot;</bucket>
+              <bucket>&quot;Steven Cartwright&quot;</bucket>
+              <bucket>&quot;Tonja Turnell&quot;</bucket>
+              <bucket>&quot;Harold Ryan&quot;</bucket>
+              <bucket>&quot;Steven Roelle&quot;</bucket>
+              <bucket>&quot;Luke Weiss&quot;</bucket>
+              <bucket>&quot;Greg Maxwell&quot;</bucket>
+              <bucket>&quot;Mark Cousins&quot;</bucket>
+              <bucket>&quot;Thomas Seio&quot;</bucket>
+              <bucket>&quot;Shahid Collister&quot;</bucket>
+              <bucket>&quot;Cassandra Brandow&quot;</bucket>
+              <bucket>&quot;Katrina Willman&quot;</bucket>
+              <bucket>&quot;Ivan Liston&quot;</bucket>
+              <bucket>&quot;Suzanne McNair&quot;</bucket>
+              <bucket>&quot;Dave Hallsten&quot;</bucket>
+              <bucket>&quot;Alan Hwang&quot;</bucket>
+              <bucket>&quot;Philisse Overcash&quot;</bucket>
+              <bucket>&quot;Tamara Willingham&quot;</bucket>
+              <bucket>&quot;Sean Braxton&quot;</bucket>
+              <bucket>&quot;Anna Andreadi&quot;</bucket>
+              <bucket>&quot;Jim Kriz&quot;</bucket>
+              <bucket>&quot;Eugene Moren&quot;</bucket>
+              <bucket>&quot;Giulietta Baptist&quot;</bucket>
+              <bucket>&quot;Heather Kirkland&quot;</bucket>
+              <bucket>&quot;Cathy Prescott&quot;</bucket>
+              <bucket>&quot;Bill Eplett&quot;</bucket>
+              <bucket>&quot;Lena Radford&quot;</bucket>
+              <bucket>&quot;Mick Hernandez&quot;</bucket>
+              <bucket>&quot;Bart Watters&quot;</bucket>
+              <bucket>&quot;Joseph Airdo&quot;</bucket>
+              <bucket>&quot;Ted Trevino&quot;</bucket>
+              <bucket>&quot;Anthony Johnson&quot;</bucket>
+              <bucket>&quot;Kunst Miller&quot;</bucket>
+              <bucket>&quot;Jamie Kunitz&quot;</bucket>
+              <bucket>&quot;Sample Company A&quot;</bucket>
+              <bucket>&quot;Emily Phan&quot;</bucket>
+              <bucket>&quot;Resi Pölking&quot;</bucket>
+              <bucket>&quot;Theone Pippenger&quot;</bucket>
+              <bucket>&quot;Bradley Drucker&quot;</bucket>
+              <bucket>&quot;Matt Abelman&quot;</bucket>
+              <bucket>&quot;Deborah Brumfield&quot;</bucket>
+              <bucket>&quot;Irene Maddox&quot;</bucket>
+              <bucket>&quot;Gary Zandusky&quot;</bucket>
+              <bucket>&quot;Denise Monton&quot;</bucket>
+              <bucket>&quot;Sue Ann Reed&quot;</bucket>
+              <bucket>&quot;Roland Schwarz&quot;</bucket>
+              <bucket>&quot;Rick Bensley&quot;</bucket>
+              <bucket>&quot;Gary Hwang&quot;</bucket>
+              <bucket>&quot;Frank Hawley&quot;</bucket>
+              <bucket>&quot;Mike Pelletier&quot;</bucket>
+              <bucket>&quot;Claudia Bergmann&quot;</bucket>
+              <bucket>&quot;Jill Fjeld&quot;</bucket>
+              <bucket>&quot;Victoria Wilson&quot;</bucket>
+              <bucket>&quot;Arianne Irving&quot;</bucket>
+              <bucket>&quot;Grant Thornton&quot;</bucket>
+              <bucket>&quot;Dana Kaydos&quot;</bucket>
+              <bucket>&quot;Pierre Wener&quot;</bucket>
+              <bucket>&quot;Alex Avila&quot;</bucket>
+              <bucket>&quot;Ross Baird&quot;</bucket>
+              <bucket>&quot;Stefania Perrino&quot;</bucket>
+              <bucket>&quot;Ruben Ausman&quot;</bucket>
+              <bucket>&quot;Russell Applegate&quot;</bucket>
+              <bucket>&quot;Anthony Rawles&quot;</bucket>
+              <bucket>&quot;Anthony Jacobs&quot;</bucket>
+              <bucket>&quot;Ellis Ballard&quot;</bucket>
+              <bucket>&quot;Dean Katz&quot;</bucket>
+              <bucket>&quot;Dave Brooks&quot;</bucket>
+              <bucket>&quot;Alan Schoenberger&quot;</bucket>
+              <bucket>&quot;Laurel Beltran&quot;</bucket>
+              <bucket>&quot;Carol Adams&quot;</bucket>
+              <bucket>&quot;Joe Kamberova&quot;</bucket>
+              <bucket>&quot;Erin Smith&quot;</bucket>
+              <bucket>&quot;Toby Carlisle&quot;</bucket>
+              <bucket>&quot;Arthur Gainer&quot;</bucket>
+              <bucket>&quot;Sung Pak&quot;</bucket>
+              <bucket>&quot;Kean Thornton&quot;</bucket>
+              <bucket>&quot;Kelly Lampkin&quot;</bucket>
+              <bucket>&quot;Scot Coram&quot;</bucket>
+              <bucket>&quot;Annie Thurman&quot;</bucket>
+              <bucket>&quot;Linda Cazamias&quot;</bucket>
+              <bucket>&quot;George Ashbrook&quot;</bucket>
+              <bucket>&quot;Rick Duston&quot;</bucket>
+              <bucket>&quot;Natalie DeCherney&quot;</bucket>
+              <bucket>&quot;Ken Heidel&quot;</bucket>
+              <bucket>&quot;Peter McVee&quot;</bucket>
+              <bucket>&quot;Frank Carlisle&quot;</bucket>
+              <bucket>&quot;Michael Paige&quot;</bucket>
+              <bucket>&quot;Kelly Collister&quot;</bucket>
+              <bucket>&quot;Fred Chung&quot;</bucket>
+              <bucket>&quot;Stewart Visinsky&quot;</bucket>
+              <bucket>&quot;Erica Smith&quot;</bucket>
+              <bucket>&quot;Jim Karlsson&quot;</bucket>
+              <bucket>&quot;Michael Chen&quot;</bucket>
+              <bucket>&quot;Hunter Glantz&quot;</bucket>
+              <bucket>&quot;Frank Preis&quot;</bucket>
+              <bucket>&quot;John Stevenson&quot;</bucket>
+              <bucket>&quot;Nora Paige&quot;</bucket>
+              <bucket>&quot;Thomas Boland&quot;</bucket>
+              <bucket>&quot;Scott Cohen&quot;</bucket>
+              <bucket>&quot;Jeremy Pistek&quot;</bucket>
+              <bucket>&quot;Juliana Krohn&quot;</bucket>
+              <bucket>&quot;Chris Cortes&quot;</bucket>
+              <bucket>&quot;Pauline Webber&quot;</bucket>
+              <bucket>&quot;Tom Prescott&quot;</bucket>
+              <bucket>&quot;Sean Christensen&quot;</bucket>
+              <bucket>&quot;Robert Waldorf&quot;</bucket>
+              <bucket>&quot;Rick Hansen&quot;</bucket>
+              <bucket>&quot;Craig Molinari&quot;</bucket>
+              <bucket>&quot;Emily Ducich&quot;</bucket>
+              <bucket>&quot;Damala Kotsonis&quot;</bucket>
+              <bucket>&quot;Matthew Grinstein&quot;</bucket>
+              <bucket>&quot;Sanjit Jacobs&quot;</bucket>
+              <bucket>&quot;Doug Jacobs&quot;</bucket>
+              <bucket>&quot;Ben Peterman&quot;</bucket>
+              <bucket>&quot;Christine Phan&quot;</bucket>
+              <bucket>&quot;Christine Sundaresam&quot;</bucket>
+              <bucket>&quot;Rick Reed&quot;</bucket>
+              <bucket>&quot;Dorothy Badders&quot;</bucket>
+              <bucket>&quot;Susan Pistek&quot;</bucket>
+              <bucket>&quot;Liz Preis&quot;</bucket>
+              <bucket>&quot;Sam Zeldin&quot;</bucket>
+              <bucket>&quot;Rob Williams&quot;</bucket>
+              <bucket>&quot;Sandra Glassco&quot;</bucket>
+              <bucket>&quot;Sally Hughsby&quot;</bucket>
+              <bucket>&quot;Randy Ferguson&quot;</bucket>
+              <bucket>&quot;Frank Merwin&quot;</bucket>
+              <bucket>&quot;Gary McGarr&quot;</bucket>
+              <bucket>&quot;Brian Dahlen&quot;</bucket>
+              <bucket>&quot;Karen Bern&quot;</bucket>
+              <bucket>&quot;Arthur Prichep&quot;</bucket>
+              <bucket>&quot;Lindsay Williams&quot;</bucket>
+              <bucket>&quot;Sylvia Foulston&quot;</bucket>
+              <bucket>&quot;Michael Moore&quot;</bucket>
+              <bucket>&quot;Gary Mitchum&quot;</bucket>
+              <bucket>&quot;Bill Stewart&quot;</bucket>
+              <bucket>&quot;Ricardo Sperren&quot;</bucket>
+              <bucket>&quot;Ionia McGrath&quot;</bucket>
+              <bucket>&quot;Jack O&apos;Briant&quot;</bucket>
+              <bucket>&quot;Stewart Carmichael&quot;</bucket>
+              <bucket>&quot;Mark Packer&quot;</bucket>
+              <bucket>&quot;Muhammed Yedwab&quot;</bucket>
+              <bucket>&quot;Katharine Harms&quot;</bucket>
+              <bucket>&quot;Jeremy Lonsdale&quot;</bucket>
+              <bucket>&quot;Deirdre Greer&quot;</bucket>
+              <bucket>&quot;Toby Gnade&quot;</bucket>
+              <bucket>&quot;Shaun Weien&quot;</bucket>
+              <bucket>&quot;Sarah Foster&quot;</bucket>
+              <bucket>&quot;Craig Carroll&quot;</bucket>
+              <bucket>&quot;Dennis Kane&quot;</bucket>
+              <bucket>&quot;Dianna Vittorini&quot;</bucket>
+              <bucket>&quot;Tracy Hopkins&quot;</bucket>
+              <bucket>&quot;Ed Braxton&quot;</bucket>
+              <bucket>&quot;Rob Dowd&quot;</bucket>
+              <bucket>&quot;Brian Thompson&quot;</bucket>
+              <bucket>&quot;Katherine Hughes&quot;</bucket>
+              <bucket>&quot;Robert Dilbeck&quot;</bucket>
+              <bucket>&quot;Steve Nguyen&quot;</bucket>
+              <bucket>&quot;Ruben Dartt&quot;</bucket>
+              <bucket>&quot;Trudy Schmidt&quot;</bucket>
+              <bucket>&quot;Speros Goranitis&quot;</bucket>
+              <bucket>&quot;Justin MacKendrick&quot;</bucket>
+              <bucket>&quot;Sara Luxemburg&quot;</bucket>
+              <bucket>&quot;Alejandro Savely&quot;</bucket>
+              <bucket>&quot;Lindsay Castell&quot;</bucket>
+              <bucket>&quot;Adam Hart&quot;</bucket>
+              <bucket>&quot;Tamara Manning&quot;</bucket>
+              <bucket>&quot;Brian Stugart&quot;</bucket>
+              <bucket>&quot;Maribeth Dona&quot;</bucket>
+              <bucket>&quot;John Lucas&quot;</bucket>
+              <bucket>&quot;Frank Atkinson&quot;</bucket>
+              <bucket>&quot;Chris Selesnick&quot;</bucket>
+              <bucket>&quot;Justin Ellison&quot;</bucket>
+              <bucket>&quot;Dionis Lloyd&quot;</bucket>
+              <bucket>&quot;Michelle Huthwaite&quot;</bucket>
+              <bucket>&quot;Nicole Hansen&quot;</bucket>
+              <bucket>&quot;Maxwell Schwartz&quot;</bucket>
+              <bucket>&quot;Marina Lichtenstein&quot;</bucket>
+              <bucket>&quot;Carol Triggs&quot;</bucket>
+              <bucket>&quot;Meg Tillman&quot;</bucket>
+              <bucket>&quot;Stephanie Ulpright&quot;</bucket>
+              <bucket>&quot;Mary Zewe&quot;</bucket>
+              <bucket>&quot;Neil Ducich&quot;</bucket>
+              <bucket>&quot;Ken Black&quot;</bucket>
+              <bucket>&quot;Christina VanderZanden&quot;</bucket>
+              <bucket>&quot;Adam Shillingsburg&quot;</bucket>
+              <bucket>&quot;Alejandro Grove&quot;</bucket>
+              <bucket>&quot;Kean Takahito&quot;</bucket>
+              <bucket>&quot;Paul Van Hugh&quot;</bucket>
+              <bucket>&quot;Christopher Schild&quot;</bucket>
+              <bucket>&quot;Lauren Leatherbury&quot;</bucket>
+              <bucket>&quot;Chloris Kastensmidt&quot;</bucket>
+              <bucket>&quot;Chuck Clark&quot;</bucket>
+              <bucket>&quot;George Zrebassa&quot;</bucket>
+              <bucket>&quot;Daniel Lacy&quot;</bucket>
+              <bucket>&quot;Liz Thompson&quot;</bucket>
+              <bucket>&quot;Eugene Barchas&quot;</bucket>
+              <bucket>&quot;Lindsay Shagiari&quot;</bucket>
+              <bucket>&quot;Cynthia Arntzen&quot;</bucket>
+              <bucket>&quot;Anna Gayman&quot;</bucket>
+              <bucket>&quot;Patrick Gardner&quot;</bucket>
+              <bucket>&quot;Christine Kargatis&quot;</bucket>
+              <bucket>&quot;Greg Matthias&quot;</bucket>
+              <bucket>&quot;Barry Französisch&quot;</bucket>
+              <bucket>&quot;Steve Chapman&quot;</bucket>
+              <bucket>&quot;Marc Crier&quot;</bucket>
+              <bucket>&quot;Dave Kipp&quot;</bucket>
+              <bucket>&quot;Becky Castell&quot;</bucket>
+              <bucket>&quot;Janet Martin&quot;</bucket>
+              <bucket>&quot;Eugene Hildebrand&quot;</bucket>
+              <bucket>&quot;Trudy Brown&quot;</bucket>
+              <bucket>&quot;Ralph Arnett&quot;</bucket>
+              <bucket>&quot;Edward Becker&quot;</bucket>
+              <bucket>&quot;Richard Bierner&quot;</bucket>
+              <bucket>&quot;Tracy Blumstein&quot;</bucket>
+              <bucket>&quot;Eva Jacobs&quot;</bucket>
+              <bucket>&quot;Bradley Talbott&quot;</bucket>
+              <bucket>&quot;Julie Kriz&quot;</bucket>
+              <bucket>&quot;Roland Fjeld&quot;</bucket>
+              <bucket>&quot;Darren Budd&quot;</bucket>
+              <bucket>&quot;John Castell&quot;</bucket>
+              <bucket>&quot;Sam Craven&quot;</bucket>
+              <bucket>&quot;David Smith&quot;</bucket>
+              <bucket>&quot;Jack Garza&quot;</bucket>
+              <bucket>&quot;Nat Carroll&quot;</bucket>
+              <bucket>&quot;Jay Kimmel&quot;</bucket>
+              <bucket>&quot;Emily Burns&quot;</bucket>
+              <bucket>&quot;Elizabeth Moffitt&quot;</bucket>
+              <bucket>&quot;Bobby Elias&quot;</bucket>
+              <bucket>&quot;Deanra Eno&quot;</bucket>
+              <bucket>&quot;Jennifer Ferguson&quot;</bucket>
+              <bucket>&quot;Xylona Preis&quot;</bucket>
+              <bucket>&quot;Beth Thompson&quot;</bucket>
+              <bucket>&quot;Fred Harton&quot;</bucket>
+              <bucket>&quot;Valerie Mitchum&quot;</bucket>
+              <bucket>&quot;Mike Gockenbach&quot;</bucket>
+              <bucket>&quot;Karen Carlisle&quot;</bucket>
+              <bucket>&quot;Philip Fox&quot;</bucket>
+              <bucket>&quot;Bill Overfelt&quot;</bucket>
+              <bucket>&quot;Craig Yedwab&quot;</bucket>
+              <bucket>&quot;Neoma Murray&quot;</bucket>
+              <bucket>&quot;Mark Hamilton&quot;</bucket>
+              <bucket>&quot;Patrick O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Christina Anderson&quot;</bucket>
+              <bucket>&quot;Carlos Soltero&quot;</bucket>
+              <bucket>&quot;Kalyca Meade&quot;</bucket>
+              <bucket>&quot;Frank Olsen&quot;</bucket>
+              <bucket>&quot;Olvera Toch&quot;</bucket>
+              <bucket>&quot;Nick Zandusky&quot;</bucket>
+              <bucket>&quot;Bart Pistole&quot;</bucket>
+              <bucket>&quot;Corey Catlett&quot;</bucket>
+              <bucket>&quot;Clytie Kelty&quot;</bucket>
+              <bucket>&quot;Logan Currie&quot;</bucket>
+              <bucket>&quot;Charles Crestani&quot;</bucket>
+              <bucket>&quot;Jamie Frazer&quot;</bucket>
+              <bucket>&quot;Don Jones&quot;</bucket>
+              <bucket>&quot;Maris LaWare&quot;</bucket>
+              <bucket>&quot;Brendan Sweed&quot;</bucket>
+              <bucket>&quot;Ann Chong&quot;</bucket>
+              <bucket>&quot;Lena Hernandez&quot;</bucket>
+              <bucket>&quot;Phillip Flathmann&quot;</bucket>
+              <bucket>&quot;Aaron Smayling&quot;</bucket>
+              <bucket>&quot;Erin Ashbrook&quot;</bucket>
+              <bucket>&quot;Ken Dana&quot;</bucket>
+              <bucket>&quot;Dave Poirier&quot;</bucket>
+              <bucket>&quot;Michael Nguyen&quot;</bucket>
+              <bucket>&quot;Roy Phan&quot;</bucket>
+              <bucket>&quot;Arthur Wiediger&quot;</bucket>
+              <bucket>&quot;Michelle Arnett&quot;</bucket>
+              <bucket>&quot;Noel Staavos&quot;</bucket>
+              <bucket>&quot;Julia Barnett&quot;</bucket>
+              <bucket>&quot;Matt Collister&quot;</bucket>
+              <bucket>&quot;Fred McMath&quot;</bucket>
+              <bucket>&quot;Filia McAdams&quot;</bucket>
+              <bucket>&quot;Edward Nazzal&quot;</bucket>
+              <bucket>&quot;Thea Hudgings&quot;</bucket>
+              <bucket>&quot;Toby Braunhardt&quot;</bucket>
+              <bucket>&quot;Helen Andreada&quot;</bucket>
+              <bucket>&quot;Duane Noonan&quot;</bucket>
+              <bucket>&quot;Chris McAfee&quot;</bucket>
+              <bucket>&quot;Justin Ritter&quot;</bucket>
+              <bucket>&quot;Andrew Gjertsen&quot;</bucket>
+              <bucket>&quot;Kristina Nunn&quot;</bucket>
+              <bucket>&quot;Daniel Byrd&quot;</bucket>
+              <bucket>&quot;Craig Leslie&quot;</bucket>
+              <bucket>&quot;Maribeth Yedwab&quot;</bucket>
+              <bucket>&quot;Neola Schneider&quot;</bucket>
+              <bucket>&quot;Rose O&apos;Brian&quot;</bucket>
+              <bucket>&quot;Ed Jacobs&quot;</bucket>
+              <bucket>&quot;Linda Southworth&quot;</bucket>
+              <bucket>&quot;Troy Staebel&quot;</bucket>
+              <bucket>&quot;Sean O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Herbert Flentye&quot;</bucket>
+              <bucket>&quot;Lisa DeCherney&quot;</bucket>
+              <bucket>&quot;Pauline Johnson&quot;</bucket>
+              <bucket>&quot;Dean Braden&quot;</bucket>
+              <bucket>&quot;Denny Joy&quot;</bucket>
+              <bucket>&quot;Max Ludwig&quot;</bucket>
+              <bucket>&quot;Cynthia Voltz&quot;</bucket>
+              <bucket>&quot;Katherine Nockton&quot;</bucket>
+              <bucket>&quot;Carlos Daly&quot;</bucket>
+              <bucket>&quot;Craig Carreira&quot;</bucket>
+              <bucket>&quot;Matt Connell&quot;</bucket>
+              <bucket>&quot;Bruce Stewart&quot;</bucket>
+              <bucket>&quot;Bill Tyler&quot;</bucket>
+              <bucket>&quot;Maya Herman&quot;</bucket>
+              <bucket>&quot;Trudy Glocke&quot;</bucket>
+              <bucket>&quot;Tanja Norvell&quot;</bucket>
+              <bucket>&quot;Helen Abelman&quot;</bucket>
+              <bucket>&quot;Eleni McCrary&quot;</bucket>
+              <bucket>&quot;Doug Bickford&quot;</bucket>
+              <bucket>&quot;Theresa Swint&quot;</bucket>
+              <bucket>&quot;Marc Harrigan&quot;</bucket>
+              <bucket>&quot;Nicole Fjeld&quot;</bucket>
+              <bucket>&quot;Lena Cacioppo&quot;</bucket>
+              <bucket>&quot;Victoria Brennan&quot;</bucket>
+              <bucket>&quot;Maureen Gastineau&quot;</bucket>
+              <bucket>&quot;Art Ferguson&quot;</bucket>
+              <bucket>&quot;Harold Pawlan&quot;</bucket>
+              <bucket>&quot;Ashley Jarboe&quot;</bucket>
+              <bucket>&quot;Stefanie Holloman&quot;</bucket>
+              <bucket>&quot;Becky Pak&quot;</bucket>
+              <bucket>&quot;Nick Radford&quot;</bucket>
+              <bucket>&quot;Victoria Pisteka&quot;</bucket>
+              <bucket>&quot;Paul Gonzalez&quot;</bucket>
+              <bucket>&quot;Roger Barcio&quot;</bucket>
+              <bucket>&quot;Janet Molinari&quot;</bucket>
+              <bucket>&quot;Scott Williamson&quot;</bucket>
+              <bucket>&quot;Amy Hunt&quot;</bucket>
+              <bucket>&quot;Thea Hendricks&quot;</bucket>
+              <bucket>&quot;Kean Nguyen&quot;</bucket>
+              <bucket>&quot;Laurel Workman&quot;</bucket>
+              <bucket>&quot;Cynthia Delaney&quot;</bucket>
+              <bucket>&quot;Rob Haberlin&quot;</bucket>
+              <bucket>&quot;Janet Lee&quot;</bucket>
+              <bucket>&quot;Tony Sayre&quot;</bucket>
+              <bucket>&quot;Shaun Chance&quot;</bucket>
+              <bucket>&quot;Jason Gross&quot;</bucket>
+              <bucket>&quot;Gary Hansen&quot;</bucket>
+              <bucket>&quot;Jay Fein&quot;</bucket>
+              <bucket>&quot;Greg Guthrie&quot;</bucket>
+              <bucket>&quot;Michelle Moray&quot;</bucket>
+              <bucket>&quot;Andrew Allen&quot;</bucket>
+              <bucket>&quot;Clay Rozendal&quot;</bucket>
+              <bucket>&quot;Christy Brittain&quot;</bucket>
+              <bucket>&quot;Katherine Ducich&quot;</bucket>
+              <bucket>&quot;Monica Federle&quot;</bucket>
+              <bucket>&quot;Joy Smith&quot;</bucket>
+              <bucket>&quot;Nat Gilpin&quot;</bucket>
+              <bucket>&quot;Liz Carlisle&quot;</bucket>
+              <bucket>&quot;Justin Hirsh&quot;</bucket>
+              <bucket>&quot;Beth Paige&quot;</bucket>
+              <bucket>&quot;Mick Crebagga&quot;</bucket>
+              <bucket>&quot;Denny Blanton&quot;</bucket>
+              <bucket>&quot;Stephanie Phelps&quot;</bucket>
+              <bucket>&quot;Charles McCrossin&quot;</bucket>
+              <bucket>&quot;Allen Rosenblatt&quot;</bucket>
+              <bucket>&quot;Jas O&apos;Carroll&quot;</bucket>
+              <bucket>&quot;David Flashing&quot;</bucket>
+              <bucket>&quot;Giulietta Dortch&quot;</bucket>
+              <bucket>&quot;Aaron Hawkins&quot;</bucket>
+              <bucket>&quot;Benjamin Farhat&quot;</bucket>
+              <bucket>&quot;Pamela Coakley&quot;</bucket>
+              <bucket>&quot;Tom Stivers&quot;</bucket>
+              <bucket>&quot;Jennifer Patt&quot;</bucket>
+              <bucket>&quot;Nona Balk&quot;</bucket>
+              <bucket>&quot;Jessica Myrick&quot;</bucket>
+              <bucket>&quot;Patrick Ryan&quot;</bucket>
+              <bucket>&quot;Barry Gonzalez&quot;</bucket>
+              <bucket>&quot;Katrina Edelman&quot;</bucket>
+              <bucket>&quot;Tracy Poddar&quot;</bucket>
+              <bucket>&quot;Chad McGuire&quot;</bucket>
+              <bucket>&quot;Logan Haushalter&quot;</bucket>
+              <bucket>&quot;Pamela Stobb&quot;</bucket>
+              <bucket>&quot;Shahid Shariari&quot;</bucket>
+              <bucket>&quot;Shahid Hopkins&quot;</bucket>
+              <bucket>&quot;Julie Prescott&quot;</bucket>
+              <bucket>&quot;Susan Vittorini&quot;</bucket>
+              <bucket>&quot;Mike Vittorini&quot;</bucket>
+              <bucket>&quot;Max Engle&quot;</bucket>
+              <bucket>&quot;Ben Wallace&quot;</bucket>
+              <bucket>&quot;Brooke Gillingham&quot;</bucket>
+              <bucket>&quot;Chad Cunningham&quot;</bucket>
+              <bucket>&quot;Darrin Sayre&quot;</bucket>
+              <bucket>&quot;Jennifer Braxton&quot;</bucket>
+              <bucket>&quot;Emily Grady&quot;</bucket>
+              <bucket>&quot;Tracy Zic&quot;</bucket>
+              <bucket>&quot;Anne Pryor&quot;</bucket>
+              <bucket>&quot;Giulietta Weimer&quot;</bucket>
+              <bucket>&quot;Craig Reiter&quot;</bucket>
+              <bucket>&quot;Michael Kennedy&quot;</bucket>
+              <bucket>&quot;Dan Campbell&quot;</bucket>
+              <bucket>&quot;Cathy Armstrong&quot;</bucket>
+              <bucket>&quot;Candace McMahon&quot;</bucket>
+              <bucket>&quot;John Dryer&quot;</bucket>
+              <bucket>&quot;Brad Eason&quot;</bucket>
+              <bucket>&quot;Tim Brockman&quot;</bucket>
+              <bucket>&quot;Maurice Satty&quot;</bucket>
+              <bucket>&quot;Bruce Degenhardt&quot;</bucket>
+              <bucket>&quot;Ted Butterfield&quot;</bucket>
+              <bucket>&quot;Meg O&apos;Connel&quot;</bucket>
+              <bucket>&quot;Raymond Messe&quot;</bucket>
+              <bucket>&quot;Benjamin Venier&quot;</bucket>
+              <bucket>&quot;Dan Lawera&quot;</bucket>
+              <bucket>&quot;Cindy Chapman&quot;</bucket>
+              <bucket>&quot;Erica Bern&quot;</bucket>
+              <bucket>&quot;Bradley Nguyen&quot;</bucket>
+              <bucket>&quot;James Lanier&quot;</bucket>
+              <bucket>&quot;Frank Gastineau&quot;</bucket>
+              <bucket>&quot;Annie Zypern&quot;</bucket>
+              <bucket>&quot;Sheri Gordon&quot;</bucket>
+              <bucket>&quot;Nancy Lomonaco&quot;</bucket>
+              <bucket>&quot;Maria Bertelson&quot;</bucket>
+              <bucket>&quot;Kelly Andreada&quot;</bucket>
+              <bucket>&quot;Mark Van Huff&quot;</bucket>
+              <bucket>&quot;Delfina Latchford&quot;</bucket>
+              <bucket>&quot;Brian DeCherney&quot;</bucket>
+              <bucket>&quot;Nora Pelletier&quot;</bucket>
+              <bucket>&quot;Zuschuss Donatelli&quot;</bucket>
+              <bucket>&quot;Philip Brown&quot;</bucket>
+              <bucket>&quot;Adrian Hane&quot;</bucket>
+              <bucket>&quot;Cathy Hwang&quot;</bucket>
+              <bucket>&quot;Ralph Kennedy&quot;</bucket>
+              <bucket>&quot;John Grady&quot;</bucket>
+              <bucket>&quot;Thomas Thornton&quot;</bucket>
+              <bucket>&quot;Mike Caudle&quot;</bucket>
+              <bucket>&quot;Gene McClure&quot;</bucket>
+              <bucket>&quot;Christine Abelman&quot;</bucket>
+              <bucket>&quot;Jeremy Ellison&quot;</bucket>
+              <bucket>&quot;Patrick Jones&quot;</bucket>
+              <bucket>&quot;Parhena Norris&quot;</bucket>
+              <bucket>&quot;Saphhira Shifley&quot;</bucket>
+              <bucket>&quot;Georgia Rosenberg&quot;</bucket>
+              <bucket>&quot;Laurel Elliston&quot;</bucket>
+              <bucket>&quot;Roger Demir&quot;</bucket>
+              <bucket>&quot;Steve Carroll&quot;</bucket>
+              <bucket>&quot;Karl Braun&quot;</bucket>
+              <bucket>&quot;Nathan Gelder&quot;</bucket>
+              <bucket>&quot;Carl Ludwig&quot;</bucket>
+              <bucket>&quot;Julia West&quot;</bucket>
+              <bucket>&quot;Darren Koutras&quot;</bucket>
+              <bucket>&quot;Don Miller&quot;</bucket>
+              <bucket>&quot;George Bell&quot;</bucket>
+              <bucket>&quot;Charlotte Melton&quot;</bucket>
+              <bucket>&quot;Paul MacIntyre&quot;</bucket>
+              <bucket>&quot;Odella Nelson&quot;</bucket>
+              <bucket>&quot;Doug O&apos;Connell&quot;</bucket>
+              <bucket>&quot;Jenna Caffey&quot;</bucket>
+              <bucket>&quot;David Bremer&quot;</bucket>
+              <bucket>&quot;Mick Brown&quot;</bucket>
+              <bucket>&quot;Guy Armstrong&quot;</bucket>
+              <bucket>&quot;Tamara Dahlen&quot;</bucket>
+              <bucket>&quot;Matt Collins&quot;</bucket>
+              <bucket>&quot;Valerie Takahito&quot;</bucket>
+              <bucket>&quot;Carl Weiss&quot;</bucket>
+              <bucket>&quot;Corey-Lock&quot;</bucket>
+              <bucket>&quot;Sarah Bern&quot;</bucket>
+              <bucket>&quot;Lisa Ryan&quot;</bucket>
+              <bucket>&quot;Magdelene Morse&quot;</bucket>
+              <bucket>&quot;Hallie Redmond&quot;</bucket>
+              <bucket>&quot;Cyra Reiten&quot;</bucket>
+              <bucket>&quot;Paul Stevenson&quot;</bucket>
+              <bucket>&quot;Bryan Mills&quot;</bucket>
+              <bucket>&quot;Stuart Van&quot;</bucket>
+              <bucket>&quot;Evan Bailliet&quot;</bucket>
+              <bucket>&quot;Cari Sayre&quot;</bucket>
+              <bucket>&quot;Noah Childs&quot;</bucket>
+              <bucket>&quot;Ross DeVincentis&quot;</bucket>
+              <bucket>&quot;Liz Willingham&quot;</bucket>
+              <bucket>&quot;Christina DeMoss&quot;</bucket>
+              <bucket>&quot;Dario Medina&quot;</bucket>
+              <bucket>&quot;Eileen Kiefer&quot;</bucket>
+              <bucket>&quot;Tony Molinari&quot;</bucket>
+              <bucket>&quot;Shirley Jackson&quot;</bucket>
+              <bucket>&quot;Matt Hagelstein&quot;</bucket>
+              <bucket>&quot;Dennis Bolton&quot;</bucket>
+              <bucket>&quot;Michelle Ellison&quot;</bucket>
+              <bucket>&quot;Tony Chapman&quot;</bucket>
+              <bucket>&quot;Lynn Smith&quot;</bucket>
+              <bucket>&quot;Alan Barnes&quot;</bucket>
+              <bucket>&quot;Allen Armold&quot;</bucket>
+              <bucket>&quot;Duane Benoit&quot;</bucket>
+              <bucket>&quot;Claire Gute&quot;</bucket>
+              <bucket>&quot;Sarah Jordon&quot;</bucket>
+              <bucket>&quot;Debra Catini&quot;</bucket>
+              <bucket>&quot;Theresa Coyne&quot;</bucket>
+              <bucket>&quot;Kimberly Carter&quot;</bucket>
+              <bucket>&quot;Andy Gerbode&quot;</bucket>
+              <bucket>&quot;Liz MacKendrick&quot;</bucket>
+              <bucket>&quot;Michelle Tran&quot;</bucket>
+              <bucket>&quot;Darren Powers&quot;</bucket>
+              <bucket>&quot;Eudokia Martin&quot;</bucket>
+              <bucket>&quot;Aimee Bixby&quot;</bucket>
+              <bucket>&quot;Ken Brennan&quot;</bucket>
+              <bucket>&quot;Alyssa Tate&quot;</bucket>
+              <bucket>&quot;Gene Hale&quot;</bucket>
+              <bucket>&quot;Denny Ordway&quot;</bucket>
+              <bucket>&quot;Mike Kennedy&quot;</bucket>
+              <bucket>&quot;Jesus Ocampo&quot;</bucket>
+              <bucket>&quot;Luke Schmidt&quot;</bucket>
+              <bucket>&quot;Troy Blackwell&quot;</bucket>
+              <bucket>&quot;Cyma Kinney&quot;</bucket>
+              <bucket>&quot;Jill Stevenson&quot;</bucket>
+              <bucket>&quot;Ryan Akin&quot;</bucket>
+              <bucket>&quot;Ann Blume&quot;</bucket>
+              <bucket>&quot;Roy Französisch&quot;</bucket>
+              <bucket>&quot;Joni Wasserman&quot;</bucket>
+              <bucket>&quot;Alan Haines&quot;</bucket>
+              <bucket>&quot;Michael Dominguez&quot;</bucket>
+              <bucket>&quot;Victor Preis&quot;</bucket>
+              <bucket>&quot;Barry Pond&quot;</bucket>
+              <bucket>&quot;Sibella Parks&quot;</bucket>
+              <bucket>&quot;Katrina Bavinger&quot;</bucket>
+              <bucket>&quot;Alejandro Ballentine&quot;</bucket>
+              <bucket>&quot;Evan Henry&quot;</bucket>
+              <bucket>&quot;Duane Huffman&quot;</bucket>
+              <bucket>&quot;Harold Engle&quot;</bucket>
+              <bucket>&quot;Skye Norling&quot;</bucket>
+              <bucket>&quot;Bryan Spruell&quot;</bucket>
+              <bucket>&quot;Bruce Geld&quot;</bucket>
+              <bucket>&quot;Erica Hernandez&quot;</bucket>
+              <bucket>&quot;Tiffany House&quot;</bucket>
+              <bucket>&quot;Sean Wendt&quot;</bucket>
+              <bucket>&quot;Todd Boyes&quot;</bucket>
+              <bucket>&quot;Richard Eichhorn&quot;</bucket>
+              <bucket>&quot;Jim Sink&quot;</bucket>
+              <bucket>&quot;Scot Wooten&quot;</bucket>
+              <bucket>&quot;Ivan Gibson&quot;</bucket>
+              <bucket>&quot;Jeremy Farry&quot;</bucket>
+              <bucket>&quot;Julie Creighton&quot;</bucket>
+              <bucket>&quot;Jason Fortune-&quot;</bucket>
+              <bucket>&quot;Sally Knutson&quot;</bucket>
+              <bucket>&quot;David Kendrick&quot;</bucket>
+              <bucket>&quot;Barry Franz&quot;</bucket>
+              <bucket>&quot;Eric Murdock&quot;</bucket>
+              <bucket>&quot;Roy Collins&quot;</bucket>
+              <bucket>&quot;Chad Sievert&quot;</bucket>
+              <bucket>&quot;David Philippe&quot;</bucket>
+              <bucket>&quot;Aaron Bergman&quot;</bucket>
+              <bucket>&quot;Rachel Payne&quot;</bucket>
+              <bucket>&quot;Alice McCarthy&quot;</bucket>
+              <bucket>&quot;Jack Lebron&quot;</bucket>
+              <bucket>&quot;Phillina Ober&quot;</bucket>
+              <bucket>&quot;Russell D&apos;Ascenzo&quot;</bucket>
+              <bucket>&quot;Sonia Cooley&quot;</bucket>
+              <bucket>&quot;Thomas Brumley&quot;</bucket>
+              <bucket>&quot;David Wiener&quot;</bucket>
+              <bucket>&quot;Sandra Flanagan&quot;</bucket>
+              <bucket>&quot;Catherine Glotzbach&quot;</bucket>
+              <bucket>&quot;Vivek Gonzalez&quot;</bucket>
+              <bucket>&quot;Benjamin Patterson&quot;</bucket>
+              <bucket>&quot;Jim Mitchum&quot;</bucket>
+              <bucket>&quot;Mary O&apos;Rourke&quot;</bucket>
+              <bucket>&quot;Erica Hackney&quot;</bucket>
+              <bucket>&quot;Jocasta Rupert&quot;</bucket>
+              <bucket>&quot;Ann Steele&quot;</bucket>
+              <bucket>&quot;Patrick Bzostek&quot;</bucket>
+              <bucket>&quot;Tracy Collins&quot;</bucket>
+              <bucket>&quot;Charles Sheldon&quot;</bucket>
+              <bucket>&quot;Pete Armstrong&quot;</bucket>
+              <bucket>&quot;Elpida Rittenbach&quot;</bucket>
+              <bucket>&quot;Michael Granlund&quot;</bucket>
+              <bucket>&quot;Jonathan Howell&quot;</bucket>
+              <bucket>&quot;Eric Barreto&quot;</bucket>
+              <bucket>&quot;Maureen Gnade&quot;</bucket>
+              <bucket>&quot;Dorothy Wardle&quot;</bucket>
+              <bucket>&quot;Harry Greene&quot;</bucket>
+              <bucket>&quot;Dorris liebe&quot;</bucket>
+              <bucket>&quot;Michael Stewart&quot;</bucket>
+              <bucket>&quot;Jennifer Jackson&quot;</bucket>
+              <bucket>&quot;Peter Bühler&quot;</bucket>
+              <bucket>&quot;Brendan Murry&quot;</bucket>
+              <bucket>&quot;Ryan Crowe&quot;</bucket>
+              <bucket>&quot;Toby Ritter&quot;</bucket>
+              <bucket>&quot;Sung Shariari&quot;</bucket>
+              <bucket>&quot;Michelle Lonsdale&quot;</bucket>
+              <bucket>&quot;Pauline Chand&quot;</bucket>
+              <bucket>&quot;Liz Pelletier&quot;</bucket>
+              <bucket>&quot;Alyssa Crouse&quot;</bucket>
+              <bucket>&quot;Henry MacAllister&quot;</bucket>
+              <bucket>&quot;Randy Bradley&quot;</bucket>
+              <bucket>&quot;Alex Russell&quot;</bucket>
+              <bucket>&quot;Muhammed MacIntyre&quot;</bucket>
+              <bucket>&quot;Barbara Fisher&quot;</bucket>
+              <bucket>&quot;Steven Ward&quot;</bucket>
+              <bucket>&quot;Angele Hood&quot;</bucket>
+              <bucket>&quot;Beth Fritzler&quot;</bucket>
+              <bucket>&quot;Shirley Schmidt&quot;</bucket>
+              <bucket>&quot;Denise Leinenbach&quot;</bucket>
+              <bucket>&quot;Julia Dunbar&quot;</bucket>
+              <bucket>&quot;Susan MacKendrick&quot;</bucket>
+              <bucket>&quot;Mathew Reese&quot;</bucket>
+              <bucket>&quot;Bryan Davis&quot;</bucket>
+              <bucket>&quot;Lori Olson&quot;</bucket>
+              <bucket>&quot;Vivek Sundaresam&quot;</bucket>
+              <bucket>&quot;Toby Swindell&quot;</bucket>
+              <bucket>&quot;Patricia Hirasaki&quot;</bucket>
+              <bucket>&quot;Cindy Schnelling&quot;</bucket>
+              <bucket>&quot;Michael Grace&quot;</bucket>
+              <bucket>&quot;Joy Bell-&quot;</bucket>
+              <bucket>&quot;Henia Zydlo&quot;</bucket>
+              <bucket>&quot;Barry Blumstein&quot;</bucket>
+              <bucket>&quot;Vicky Freymann&quot;</bucket>
+              <bucket>&quot;Ritsa Hightower&quot;</bucket>
+              <bucket>&quot;Eric Hoffmann&quot;</bucket>
+              <bucket>&quot;Brian Derr&quot;</bucket>
+              <bucket>&quot;Anthony Witt&quot;</bucket>
+              <bucket>&quot;Chuck Sachs&quot;</bucket>
+              <bucket>&quot;Art Foster&quot;</bucket>
+              <bucket>&quot;Neil Knudson&quot;</bucket>
+              <bucket>&quot;Darrin Van Huff&quot;</bucket>
+              <bucket>&quot;Astrea Jones&quot;</bucket>
+              <bucket>&quot;Maria Zettner&quot;</bucket>
+              <bucket>&quot;Alex Grayson&quot;</bucket>
+              <bucket>&quot;Cari Schnelling&quot;</bucket>
+              <bucket>&quot;Paul Knutson&quot;</bucket>
+              <bucket>&quot;Anna Chung&quot;</bucket>
+              <bucket>&quot;Corey Roper&quot;</bucket>
+              <bucket>&quot;Alan Shonely&quot;</bucket>
+              <bucket>&quot;Joni Blumstein&quot;</bucket>
+              <bucket>&quot;Rob Beeghly&quot;</bucket>
+              <bucket>&quot;Andy Yotov&quot;</bucket>
+              <bucket>&quot;Maureen Fritzler&quot;</bucket>
+              <bucket>&quot;Berenike Kampe&quot;</bucket>
+              <bucket>&quot;MaryBeth Skach&quot;</bucket>
+              <bucket>&quot;Erin Creighton&quot;</bucket>
+              <bucket>&quot;Kelly Williams&quot;</bucket>
+              <bucket>&quot;John Huston&quot;</bucket>
+              <bucket>&quot;Sonia Sunley&quot;</bucket>
+              <bucket>&quot;Matthew Clasen&quot;</bucket>
+              <bucket>&quot;Khloe Miller&quot;</bucket>
+              <bucket>&quot;Ralph Ritter&quot;</bucket>
+              <bucket>&quot;Brad Thomas&quot;</bucket>
+              <bucket>&quot;Tim Taslimi&quot;</bucket>
+              <bucket>&quot;Bobby Trafton&quot;</bucket>
+              <bucket>&quot;Carlos Meador&quot;</bucket>
+              <bucket>&quot;Shui Tom&quot;</bucket>
+              <bucket>&quot;Vivian Mathis&quot;</bucket>
+              <bucket>&quot;Neil Französisch&quot;</bucket>
+              <bucket>&quot;Mark Haberlin&quot;</bucket>
+              <bucket>&quot;Heather Jas&quot;</bucket>
+              <bucket>&quot;Henry Goldwyn&quot;</bucket>
+              <bucket>&quot;Jason Klamczynski&quot;</bucket>
+              <bucket>&quot;Brendan Dodson&quot;</bucket>
+              <bucket>&quot;Carol Darley&quot;</bucket>
+              <bucket>&quot;Aleksandra Gannaway&quot;</bucket>
+              <bucket>&quot;Jill Matthias&quot;</bucket>
+              <bucket>&quot;Don Weiss&quot;</bucket>
+              <bucket>&quot;Joy Daniels&quot;</bucket>
+              <bucket>&quot;Lycoris Saunders&quot;</bucket>
+              <bucket>&quot;Melanie Seite&quot;</bucket>
+              <bucket>&quot;Larry Tron&quot;</bucket>
+              <bucket>&quot;Evan Minnotte&quot;</bucket>
+              <bucket>&quot;Bart Folk&quot;</bucket>
+              <bucket>&quot;Vivek Grady&quot;</bucket>
+              <bucket>&quot;Jim Radford&quot;</bucket>
+              <bucket>&quot;Chuck Magee&quot;</bucket>
+              <bucket>&quot;Luke Foster&quot;</bucket>
+              <bucket>&quot;Stuart Calhoun&quot;</bucket>
+              <bucket>&quot;Barry Weirich&quot;</bucket>
+              <bucket>&quot;Sung Chung&quot;</bucket>
+              <bucket>&quot;Andrew Roberts&quot;</bucket>
+              <bucket>&quot;Dorothy Dickinson&quot;</bucket>
+              <bucket>&quot;Hilary Holden&quot;</bucket>
+              <bucket>&quot;Brad Norvell&quot;</bucket>
+              <bucket>&quot;Larry Hughes&quot;</bucket>
+              <bucket>&quot;Nicole Brennan&quot;</bucket>
+              <bucket>&quot;Robert Barroso&quot;</bucket>
+              <bucket>&quot;Jennifer Halladay&quot;</bucket>
+              <bucket>&quot;Allen Goldenen&quot;</bucket>
+              <bucket>&quot;Erin Mull&quot;</bucket>
+              <bucket>&quot;Guy Phonely&quot;</bucket>
+              <bucket>&quot;Paul Lucas&quot;</bucket>
+              <bucket>&quot;Joel Jenkins&quot;</bucket>
+              <bucket>&quot;Guy Thornton&quot;</bucket>
+              <bucket>&quot;Sally Matthias&quot;</bucket>
+              <bucket>&quot;Dianna Arnett&quot;</bucket>
+              <bucket>&quot;Muhammed Lee&quot;</bucket>
+              <bucket>&quot;Bobby Odegard&quot;</bucket>
+              <bucket>&quot;Anthony O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Anthony Garverick&quot;</bucket>
+              <bucket>&quot;Phillip Breyer&quot;</bucket>
+              <bucket>&quot;Ed Ludwig&quot;</bucket>
+              <bucket>&quot;Clay Cheatham&quot;</bucket>
+              <bucket>&quot;Joni Sundaresam&quot;</bucket>
+              <bucket>&quot;Greg Hansen&quot;</bucket>
+              <bucket>&quot;Pete Takahito&quot;</bucket>
+              <bucket>&quot;Roland Murray&quot;</bucket>
+              <bucket>&quot;Anemone Ratner&quot;</bucket>
+              <bucket>&quot;Harold Dahlen&quot;</bucket>
+              <bucket>&quot;Fred Wasserman&quot;</bucket>
+              <bucket>&quot;Karen Seio&quot;</bucket>
+              <bucket>&quot;Adrian Shami&quot;</bucket>
+              <bucket>&quot;Lisa Hazard&quot;</bucket>
+              <bucket>&quot;Michael Oakman&quot;</bucket>
+              <bucket>&quot;Jasper Cacioppo&quot;</bucket>
+              <bucket>&quot;Larry Blacks&quot;</bucket>
+              <bucket>&quot;Ricardo Emerson&quot;</bucket>
+              <bucket>&quot;Susan Gilcrest&quot;</bucket>
+              <bucket>&quot;Roy Skaria&quot;</bucket>
+              <bucket>&quot;Carl Jackson&quot;</bucket>
+              <bucket>&quot;Mitch Gastineau&quot;</bucket>
+              <bucket>&quot;Nathan Cano&quot;</bucket>
+              <bucket>&quot;Lela Donovan&quot;</bucket>
+              <bucket>&quot;Thais Sissman&quot;</bucket>
+              <bucket>&quot;Sharelle Roach&quot;</bucket>
+              <bucket>&quot;Cindy Stewart&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:customer_name:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' scope='cols' value='Dollars' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' />
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:customer_name:nk]</rows>
+        <cols>[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{14A2898E-143C-4EE3-8FF4-AEC73D11D902}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<2017 YOY Sales and Profits by Category>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[order_date]' derivation='Month' name='[mn:order_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sub_category]' derivation='None' name='[none:sub_category:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+            <column-instance column='[profit]' derivation='Sum' name='[pcdf:sum:profit:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' level-address='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' ordering-field='[federated.1t759gc009diyg1bw9gl313iqq9e].[order_date]' ordering-type='Field' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[sales]' derivation='Sum' name='[pcdf:sum:sales:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' level-address='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' ordering-field='[federated.1t759gc009diyg1bw9gl313iqq9e].[order_date]' ordering-type='Field' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Profit' datatype='real' default-format='C1033%' name='[profit]' role='measure' type='quantitative' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+            <column-instance column='[order_date]' derivation='Year' name='[yr:order_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[pcdf:sum:profit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[pcdf:sum:sales:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:category:nk]'>
+            <groupfilter function='level-members' level='[none:category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:sub_category:nk]'>
+            <groupfilter function='level-members' level='[none:sub_category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:order_date:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:order_date:ok]' member='2017' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:order_date:ok]' />
+              <groupfilter function='member' level='[yr:order_date:ok]' member='2016' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:category:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:sub_category:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' />
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]</rows>
+        <cols>([federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok] / ([federated.1t759gc009diyg1bw9gl313iqq9e].[mn:order_date:ok] / [federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]))</cols>
+        <show-full-range>
+          <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[order_date]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{2352BFB4-5554-4B31-B993-4C0A6E35BA5D}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sales by City and State&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' field-type='quantitative' max-size='1' min-size='0' type='rangesize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' />
+              <lod column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:country:nk]' />
+              <lod column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' />
+              <lod column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' />
+              <size column='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.1752221584320068' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[Latitude (generated)]</rows>
+        <cols>[federated.1t759gc009diyg1bw9gl313iqq9e].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{5E0BC0DE-D773-4995-9B87-4211E761C680}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<Customer Count by City and State>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[customer_id]' derivation='CountD' name='[ctd:customer_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:city:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' filter-group='5'>
+            <groupfilter from='&quot;Consumer&quot;' function='range' level='[none:segment:nk]' to='&quot;Home Office&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[Longitude (generated)]' field-type='quantitative' max='-7263994.4773006355' min='-14203127.564894499' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[Latitude (generated)]' field-type='quantitative' max='6808222.3518836796' min='2862780.1831998732' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]' />
+              <tooltip column='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' />
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' />
+              <lod column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:country:nk]' />
+              <lod column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.3966295719146729' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[Latitude (generated)]</rows>
+        <cols>[federated.1t759gc009diyg1bw9gl313iqq9e].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9555B7A4-926C-4A69-8393-6D8A2A3647DC}' />
+    </worksheet>
+    <worksheet name='Sheet 5 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1170aa' fontname='Tableau Book' fontsize='28'>Customer Count by City and State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[customer_id]' derivation='CountD' name='[ctd:customer_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Sales' datatype='real' default-format='C1033%' name='[sales]' role='measure' type='quantitative' />
+            <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:city:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]'>
+            <groupfilter function='level-members' level='[none:region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' filter-group='5'>
+            <groupfilter from='&quot;Consumer&quot;' function='range' level='[none:segment:nk]' to='&quot;Home Office&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' value='96' />
+            <format attr='width' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' value='386' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='40' />
+            <format attr='height' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' value='28' />
+            <format attr='width' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' value='136' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='normal' />
+            <format attr='font-family' value='Times New Roman' />
+            <format attr='font-size' value='24' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' value='Times New Roman' />
+            <format attr='text-align' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' value='center' />
+            <format attr='font-size' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' value='20' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='18' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]</rows>
+        <cols>[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]</cols>
+      </table>
+      <simple-id uuid='{F678DDAA-59B2-4FCA-9DF2-4273CE5C2A33}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1170aa' fontsize='28'>Order Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column-instance column='[ship_date]' derivation='Day' name='[dy:ship_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ship_date]' derivation='Month' name='[mn:ship_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column caption='Ship Date' datatype='date' name='[ship_date]' role='dimension' type='ordinal' />
+            <column-instance column='[quantity]' derivation='Sum' name='[sum:quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ship_date]' derivation='Day-Trunc' name='[tdy:ship_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ship_date]' derivation='Year' name='[yr:ship_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[dy:ship_date:ok]'>
+            <groupfilter function='level-members' level='[dy:ship_date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]'>
+            <groupfilter function='level-members' level='[mn:ship_date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]'>
+            <groupfilter function='member' level='[yr:ship_date:ok]' member='2017' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[dy:ship_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:quantity:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:quantity:qk]</rows>
+        <cols>[federated.1t759gc009diyg1bw9gl313iqq9e].[tdy:ship_date:qk]</cols>
+      </table>
+      <simple-id uuid='{195E0DEF-D0EC-45FB-9759-58EBFDCC9BCF}' />
+    </worksheet>
+    <worksheet name='Sheet 7 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Order Count Over Time&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+            <column-instance column='[ship_date]' derivation='Day' name='[dy:ship_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ship_date]' derivation='Month' name='[mn:ship_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column caption='Ship Date' datatype='date' name='[ship_date]' role='dimension' type='ordinal' />
+            <column-instance column='[quantity]' derivation='Sum' name='[sum:quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ship_date]' derivation='Month-Trunc' name='[tmn:ship_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ship_date]' derivation='Year' name='[yr:ship_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[dy:ship_date:ok]'>
+            <groupfilter function='level-members' level='[dy:ship_date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]'>
+            <groupfilter function='level-members' level='[mn:ship_date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]'>
+            <groupfilter function='member' level='[yr:ship_date:ok]' member='2017' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]</column>
+            <column>[federated.1t759gc009diyg1bw9gl313iqq9e].[dy:ship_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t759gc009diyg1bw9gl313iqq9e].[tmn:ship_date:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{553751CD-AE8F-4BB4-9F04-2222A9587BAD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='741'>
+            <zone h='98518' id='5' type-v2='layout-basic' w='25885' x='417' y='741'>
+              <zone h='98518' id='3' name='Sheet 1' w='25885' x='417' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='1407' h='98518' id='6' is-fixed='true' param='horz' type-v2='layout-flow' w='73281' x='26302' y='741'>
+              <zone h='98518' id='9' name='Sheet 2' w='67648' x='26302' y='741'>
+                <layout-cache cell-count-w='34' minheight='224' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='100' h='98518' id='8' is-fixed='true' name='Sheet 1' pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type-v2='color' w='5625' x='93950' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='32' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone fixed-size='280' h='98518' id='3' is-fixed='true' name='Sheet 1' w='25885' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='98518' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type-v2='color' w='5625' x='93950' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98518' id='9' is-fixed='true' name='Sheet 2' w='67648' x='26302' y='741'>
+                  <layout-cache cell-count-w='34' minheight='224' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1A2025F8-FBD7-4BB7-9104-23715C1448D8}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+        <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+        <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+        <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+        <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='741'>
+            <zone h='98518' id='5' type-v2='layout-basic' w='90833' x='417' y='741'>
+              <zone h='67222' id='12' name='Sheet 5' w='90833' x='417' y='32037'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31296' id='27' name='Sheet 5 (2)' w='90833' x='417' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98518' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8333' x='91250' y='741'>
+              <zone h='20648' id='28' name='Sheet 5 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' type-v2='filter' w='8333' x='91250' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17408' id='29' name='Sheet 5 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' type-v2='filter' w='8333' x='91250' y='21389'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30231' id='14' name='Sheet 5' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' type-v2='filter' values='cascading' w='8333' x='91250' y='38797'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30231' id='15' name='Sheet 5' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' type-v2='filter' values='cascading' w='8333' x='91250' y='69028'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='44' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone h='20648' id='28' mode='checkdropdown' name='Sheet 5 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' type-v2='filter' w='8333' x='91250' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17408' id='29' mode='checkdropdown' name='Sheet 5 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' type-v2='filter' w='8333' x='91250' y='21389'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31296' id='27' is-fixed='true' name='Sheet 5 (2)' w='90833' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30231' id='14' mode='checkdropdown' name='Sheet 5' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' type-v2='filter' values='cascading' w='8333' x='91250' y='38797'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30231' id='15' mode='checkdropdown' name='Sheet 5' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' type-v2='filter' values='cascading' w='8333' x='91250' y='69028'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67222' id='12' is-fixed='true' name='Sheet 5' w='90833' x='417' y='32037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{20CC61C1-A427-4C26-A4F7-520E9DC74F49}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Superstore_final' name='federated.1t759gc009diyg1bw9gl313iqq9e' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1t759gc009diyg1bw9gl313iqq9e'>
+        <column-instance column='[ship_date]' derivation='Month' name='[mn:ship_date:ok]' pivot='key' type='ordinal' />
+        <column caption='Ship Date' datatype='date' name='[ship_date]' role='dimension' type='ordinal' />
+        <column-instance column='[ship_date]' derivation='Year' name='[yr:ship_date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='741'>
+            <zone h='98518' id='5' type-v2='layout-basic' w='90833' x='417' y='741'>
+              <zone h='98518' id='3' name='Sheet 7' w='80208' x='417' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98518' id='10' name='Sheet 7 (2)' w='10625' x='80625' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98518' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8333' x='91250' y='741'>
+              <zone h='6760' id='8' name='Sheet 7' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6760' id='9' name='Sheet 7' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='7501'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6760' id='11' name='Sheet 7 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='14261'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6760' id='12' name='Sheet 7 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='21021'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='31' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone h='13519' id='8' mode='checkdropdown' name='Sheet 7' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='25834' id='9' mode='checkdropdown' name='Sheet 7' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='14260'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98518' id='3' is-fixed='true' name='Sheet 7' w='80208' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13519' id='11' mode='checkdropdown' name='Sheet 7 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='40094'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='25834' id='12' mode='checkdropdown' name='Sheet 7 (2)' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type-v2='filter' w='8333' x='91250' y='53613'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98518' id='10' is-fixed='true' name='Sheet 7 (2)' w='10625' x='80625' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BDAA591E-D9E4-4149-9709-04411C1BA33D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{91E75B81-190D-4B24-B5D6-F05F3C08A84A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7993E11D-905C-44D2-8826-71918F4DD6DA}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7BC9AB58-6387-4D5E-858A-E31FA4083FA7}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:sub_category:nk]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:category:nk]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:order_date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B49A5DCB-0BAD-47C7-AF9C-DEBF8C0E11C3}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[sum:sales:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6262313-334B-4006-B229-B7FE9BEE81B8}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' type='filter' values='cascading' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.1t759gc009diyg1bw9gl313iqq9e].[ctd:customer_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{52D56E93-9066-41BB-BAAD-59A1FB86B74F}' />
+    </window>
+    <window class='worksheet' name='Sheet 5 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:region:nk]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:segment:nk]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:state:nk]' type='filter' values='cascading' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[none:city:nk]' type='filter' values='cascading' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{BBD80478-BE03-426B-9164-9BF4527FA9B5}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7238D840-F3FC-4926-8561-185F90F61C49}' />
+    </window>
+    <window class='worksheet' name='Sheet 7 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[yr:ship_date:ok]' type='filter' />
+            <card param='[federated.1t759gc009diyg1bw9gl313iqq9e].[mn:ship_date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E6EBF83-FC72-41F1-90CB-AB06A78A2BC6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{45113941-8EF4-4544-9BF0-B012433488B6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5 (2)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5D2687F6-00E2-438F-8028-77C35608BCF1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 7 (2)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D34297A7-AB5D-4756-8486-C6AD35083998}' />
+    </window>
+  </windows>
+</workbook>
