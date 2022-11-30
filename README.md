@@ -15,9 +15,7 @@
 * Slides - Figures, slides and screenshots
 
 ## Tableau Dashboards
-* Tableau Total Sales and Profits by Category
 ![Tableau Total Sales and Profits by Category](https://github.com/haodong191/superstore-project/blob/main/Slides/Tableau%20Total%20Sales%20and%20Profits%20by%20Category.png?raw=true)
-* Customer Count by City and State KPI
 ![Customer Count by City and State KPI](https://github.com/haodong191/superstore-project/blob/main/Slides/Customer%20Count%20by%20City%20and%20State%20KPI.png?raw=true)
-*
-*
+![Order Over Time](https://github.com/haodong191/superstore-project/blob/main/Slides/Order%20Over%20Time.png?raw=true)
+
