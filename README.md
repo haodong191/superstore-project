@@ -24,5 +24,5 @@
 1. ![Total Sales and Profits by Category](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_1.jpg?raw=true)
 2. ![Total Sales and Profits by Sub-category](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_2.jpg?raw=true)
 3. ![Total Sales and Profits by Month and Year](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_3.jpg?raw=true)
-3. ![Total Sales, Profits, and Units by Year](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_4.jpg)
-3. ![YOY Sales and Profits - INCOMPLETE)](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_5.jpg)
+4. ![Total Sales, Profits, and Units by Year](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_4.jpg)
+5. ![YOY Sales and Profits - INCOMPLETE)](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_5.jpg)
