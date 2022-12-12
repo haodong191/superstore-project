@@ -21,3 +21,6 @@
 
 ## Power BI Dashboards
 * https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard.pdf
+1. ![Total Sales and Profits by Category]()
+2. ![Total Sales and Profits by Category]()
+3. ![Total Sales and Profits by Category]()
