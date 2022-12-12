@@ -20,3 +20,4 @@
 3. ![Order Over Time](https://github.com/haodong191/superstore-project/blob/main/Slides/Order%20Over%20Time.png?raw=true)
 
 ## Power BI Dashboards
+* https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard.pdf
