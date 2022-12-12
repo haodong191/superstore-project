@@ -19,3 +19,4 @@
 2. ![Customer Count by City and State KPI](https://github.com/haodong191/superstore-project/blob/main/Slides/Customer%20Count%20by%20City%20and%20State%20KPI.png?raw=true)
 3. ![Order Over Time](https://github.com/haodong191/superstore-project/blob/main/Slides/Order%20Over%20Time.png?raw=true)
 
+## Power BI Dashboards
