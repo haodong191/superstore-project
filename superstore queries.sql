@@ -1,3 +1,18 @@
+--query for top customer in PA, 2017, consumer by order count
+WITH BASE AS (
+SELECT *
+	FROM superstore
+	WHERE segment LIKE 'Consumer'
+	AND region LIKE 'East'
+	AND order_date BETWEEN '2015-12-31' AND '2017-12-31'
+	AND state_name LIKE 'Pennsylvania'
+)
+
+SELECT customer_name, count(order_id)
+FROM BASE
+GROUP by customer_name
+ORDER by COUNT DESC;
+
 --query for avg sales and sum of all sales from - orders from 2016, city of Los Angeles and San Francisco, from corporate orders only.
 SELECT AVG(sales), SUM(sales)
 FROM superstore
