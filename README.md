@@ -16,11 +16,10 @@
 
 ## Tableau Dashboards
 1. ![Tableau Total Sales and Profits by Category](https://github.com/haodong191/superstore-project/blob/main/Slides/Tableau%20Total%20Sales%20and%20Profits%20by%20Category.png?raw=true)
-..* The Technology category leads in both sales and profits.
-..* The Furniture category is our least profitable. This can be atributed to the cost of warehousing and shipping these large items. Furthermore, within sub-categories Tables leads in lost profits at -$17,725.
-..* The sub-category of Phone is our highest selling product and is second in profits.
-* Key Takeaways
-..* Prioritize reducing lost profits in the Tables and Bookcases categories. 
+ * The Technology category leads in both sales and profits.
+ * The Furniture category is our least profitable. This can be atributed to the cost of warehousing and shipping these large items. Furthermore, within sub-categories Tables leads in lost profits at -$17,725.
+ * The sub-category of Phone is our highest selling product and is second in profits.
+  * Key Takeaway - Prioritize reducing lost profits in the Tables and Bookcases categories. 
 2. ![Customer Count by City and State KPI](https://github.com/haodong191/superstore-project/blob/main/Slides/Customer%20Count%20by%20City%20and%20State%20KPI.png?raw=true)
 3. ![Order Over Time](https://github.com/haodong191/superstore-project/blob/main/Slides/Order%20Over%20Time.png?raw=true)
 
