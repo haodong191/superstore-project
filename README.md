@@ -22,6 +22,11 @@
 ## Power BI Dashboards
 * https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard.pdf
 1. ![Total Sales and Profits by Category](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_1.jpg?raw=true)
+..*The Technology category leads in both sales and profits.
+..*The Furniture category is our least profitable. This can be atributed to the cost of warehousing and shipping these large items. Furthermore, within sub-categories Tables leads in lost profits at -$17,725.
+..*The sub-category of Phone is our highest selling product and is second in profits.
+* Key Takeaways
+..*Prioritize reducing lost profits in the Tables and Bookcases categories. 
 2. ![Total Sales and Profits by Sub-category](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_2.jpg?raw=true)
 3. ![Total Sales and Profits by Month and Year](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_3.jpg?raw=true)
 4. ![Total Sales, Profits, and Units by Year](https://github.com/haodong191/superstore-project/blob/main/Slides/Power%20BI%20Dashboard_4.jpg)
