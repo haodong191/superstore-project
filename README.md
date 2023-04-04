@@ -19,8 +19,11 @@
  * The Technology category leads in both sales and profits.
  * The Furniture category is our least profitable. This can be atributed to the cost of warehousing and shipping these large items. Furthermore, within sub-categories Tables leads in lost profits at -$17,725.
  * The sub-category of Phone is our highest selling product and is second in profits.
-  * Key Takeaway - Prioritize reducing lost profits in the Tables and Bookcases categories. 
+ * Key Opertunities - Prioritize reducing lost profits in the Tables and Bookcases categories. 
 2. ![Customer Count by City and State KPI](https://github.com/haodong191/superstore-project/blob/main/Slides/Customer%20Count%20by%20City%20and%20State%20KPI.png?raw=true)
+* This model shows our customer count and sales by region.
+* Not surprisinly Seattle, Los Angelas, Chicago, and New York lead by a large margin in customer count.
+* Key Opertunities - Expand our customer count in other key major cities - San Fran, Houston, Phoenix, Philadelphia, San Diego, Dallas, and Austin.
 3. ![Order Over Time](https://github.com/haodong191/superstore-project/blob/main/Slides/Order%20Over%20Time.png?raw=true)
 
 ## Power BI Dashboards
